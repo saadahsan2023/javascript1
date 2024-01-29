@@ -1,0 +1,99 @@
+	<script type="text/javascript">
+		// function cafe() {
+		// 	let a = parseInt(document.getElementById("tea").value);
+		// 	let b = parseInt(document.getElementById("coffee").value);
+		// 	let c = parseInt(document.getElementById("cream").value);
+		// 	let total   =  a * 60 + b * 120 + c * 200;
+		// 	// let total = a + b + c;
+		// 	document.getElementById("total").innerHTML = total;
+		// }
+
+		function cafe() {
+			let a = parseInt(document.getElementById("tea").value);
+			let b = parseInt(document.getElementById("coffee").value);
+			let c = parseInt(document.getElementById("cream").value);
+			
+			if (!a == "" || !b == "" || !c == "") {
+
+
+				let total = a * 60 + b * 120 + c * 200;
+				document.getElementById("total").innerHTML = total;
+			}
+		}
+	
+	</script>
+    		// function cafe() {
+		// 	let a = parseInt(document.getElementById("tea").value);
+		// 	let b = parseInt(document.getElementById("coffee").value);
+		// 	let c = parseInt(document.getElementById("cream").value);
+		// 	let total   =  a * 60 + b * 120 + c * 200;
+		// 	// let total = a + b + c;
+		// 	document.getElementById("total").innerHTML = total;
+		// }
+
+		// function cafe() {
+		// 	let a = parseInt(document.getElementById("tea").value);
+		// 	let b = parseInt(document.getElementById("coffee").value);
+		// 	let c = parseInt(document.getElementById("cream").value);
+
+		// 	if (!a == "" || !b == "" || !c == "") {
+
+
+		// 		let total = a * 60 + b * 120 + c * 200;
+		// 		document.getElementById("total").innerHTML = total;
+		// 	}
+		// }
+		<script>
+
+
+	function totalAmount() {
+
+
+
+		let value1 = parseInt(document.getElementById('Espresso').value);
+		let value2 = parseInt(document.getElementById('Latte').value);
+		let value3 = parseInt(document.getElementById('Mocha').value);
+		let value4 = parseInt(document.getElementById('FlatWhite').value);
+		let value5 = parseInt(document.getElementById('Turkish').value);
+
+
+		let totalItems = value1 + value2 + value3 + value4 + value5;
+
+		document.getElementById('items').innerHTML = `Quantity Of Items is ${totalItems}`;
+
+		let totalPrice = value1 * 10 + value2 * 12 + value3 * 15 + value4 * 18 + value5 * 20;
+
+		document.getElementById('total').innerHTML = `${totalPrice}$`;
+
+
+
+
+
+	}
+
+
+	function remove() {
+
+
+
+		document.getElementById('Espresso').style.display = "none";
+		document.getElementById('Latte').style.display = "none"
+		document.getElementById('Mocha').style.display = "none"
+		document.getElementById('FlatWhite').style.display = "none"
+		document.getElementById('Turkish').style.display = "none"
+
+
+		document.getElementById('items').style.display = "none";
+		document.getElementById('total').style.display = "none";
+
+
+
+
+
+
+
+	};
+
+
+
+</script>
